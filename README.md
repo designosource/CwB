@@ -1,2 +1,0 @@
-# CwB
-Climate without Borders
