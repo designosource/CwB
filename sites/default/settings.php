@@ -295,7 +295,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'k4hDsElGUTOzDnuh7R5g1pboiMeuM8f6E7v8RJ18J24Aea1Qr-2q_q9si8ASvXZ9FtlLhunzvQ';
+$settings['hash_salt'] = 'xFyE3GBT06T5MFDfrWmgMdnEA-exWx4cs5bjolb3708UmJQ1tR1MRlrFNiwh7gN98A1LwTDc3w';
 
 /**
  * Deployment identifier.
@@ -784,9 +784,9 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'cwb',
-  'username' => 'root',
-  'password' => 'roooot',
+  'database' => 'ataraxiadesign_be',
+  'username' => 'ataraxiadesign_be',
+  'password' => 'EATRpJTUpJsGWA6ggCXsF4kD',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -794,4 +794,4 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_wVieyvGavEqaxqYLYPFGilxgMrvIMQsF18KYFNvwI1UibZBOpUn59iVj8V4sGZhZ2S3-dqVgiw/sync';
+$config_directories['sync'] = 'sites/default/files/config_V05BG5T7onfBDEJl8EUl_8GrJXBJXMHpsJkbiMSMzc8VZm0GKzROpJrDDEzrkuKCumJ2r3TpJg/sync';
