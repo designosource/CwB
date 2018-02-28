@@ -1,7 +1,9 @@
-html {
-  box-sizing: border-box;
-}
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start; }
+  header nav ul li {
+    padding: 0 30px;
+    margin: 10px 0; }
 
-*, *::after, *::before {
-  box-sizing: inherit;
-}
+/*# sourceMappingURL=theme.css.map */
