@@ -4,7 +4,6 @@
   "dependencies": {
     "bourbon": "~4.3.0",
     "bourbon-neat": "~1.8.0",
-    "grunt": "^1.0.1",
     "autoprefixer": "^6.7.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -20,7 +19,9 @@
   },
   "description": "=========================== How to Use Grunt with Basic ===========================",
   "main": "Gruntfile.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.2"
+  },
   "author": "",
   "license": "MIT"
 }
