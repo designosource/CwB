@@ -18,7 +18,6 @@ sites/*/settings*.php
 web.config
 authorize.php
 cron.php
-index.php
 install.php
 update.php
 xmlrpc.php
