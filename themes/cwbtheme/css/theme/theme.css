@@ -1,0 +1,9 @@
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start; }
+  header nav ul li {
+    padding: 0 30px;
+    margin: 10px 0; }
+
+/*# sourceMappingURL=theme.css.map */
