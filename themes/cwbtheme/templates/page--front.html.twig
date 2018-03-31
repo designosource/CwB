@@ -83,11 +83,7 @@
   <!-- ______________________ FOOTER _______________________ -->
 
   {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-    {% if 'members' in url('<current>') %}
-      <footer id="footer" class="members">
-    {% else %}
-      <footer id="footer">
-    {% endif %}
+    <footer id="footer">
       <div class="col-md-10 offset-1">
         <div class="row">
           {% if page.footer_first %}

@@ -19,7 +19,10 @@ regions:
   content: Content
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  footer: Footer
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
 
 # Information added by Drupal.org packaging script on 2017-10-15
 version: '8.x-1.3'
