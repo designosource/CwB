@@ -1,0 +1,50 @@
+.members-view{
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.members-view article{
+    background-color: #35B996;
+    padding-bottom: 40px;
+}
+
+.members-view .__user-picture{
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.members-view .__firstname,.__name{
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.members-view .__firstname,.__location,.__social-media{
+    padding-left: 20px;
+}
+
+.members-view .__user-picture a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.members-view .__firstname a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.members-view .__name a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.members-view .__social-media a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
