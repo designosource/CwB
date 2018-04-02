@@ -1,9 +1,11 @@
 {% set main_menu = page.primary_menu|render %}
 {% set secondary_menu = page.secondary_menu|render %}
+{% set site_url = url("<current>") %}
+{% set members = 'members' in site_url|render|render %}
 <div{{ attributes.addClass(
   'layout-container',
   main_menu or secondary_menu ? 'with-navigation',
-  secondary_menu ? 'with-subnav'
+  secondary_menu ? 'with-subnav', members ? 'members'
 ) }}>
 
   <!-- ______________________ HEADER _______________________ -->
@@ -83,7 +85,8 @@
   <!-- ______________________ FOOTER _______________________ -->
 
   {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-    {% if 'members' in url('<current>') %}
+
+    {% if 'members' in site_url|render|render %}
       <footer id="footer" class="members">
     {% else %}
       <footer id="footer">
