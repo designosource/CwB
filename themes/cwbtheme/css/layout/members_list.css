@@ -10,17 +10,35 @@
 }
 
 .members-view .__user-picture{
-    height: 300px;
     margin-bottom: 15px;
 }
 
-.members-view .__firstname,.__name{
+.members-view .__user-picture img{
+    width: 100%;
+    height: 300px;
+}
+
+.members-view .__firstname{
     display: inline;
     font-weight: bold;
     font-size: 20px;
 }
 
-.members-view .__firstname,.__location,.__social-media{
+.members-view .__name{
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.members-view .__firstname{
+    padding-left: 20px;
+}
+
+.members-view .__location{
+    padding-left: 20px;
+}
+
+.members-view .__social-media{
     padding-left: 20px;
 }
 
