@@ -1,0 +1,28 @@
+{# Create classes array. The 'node' class is required for contextual edit links. #}
+{% set classes = [
+  'node'
+] %}
+
+{# BEM inspired class syntax: https://en.bem.info/
+   Enable this code if you would like node classes like "article article--layout-teaser", where article is the content type and teaser is the view mode.
+{% set classes = classes|merge([
+  node.bundle|clean_class,
+  view_mode ? node.bundle|clean_class ~ '--layout-' ~ view_mode|clean_class
+]) %}
+{% set title_classes = [
+  node.bundle|clean_class ~ '__title'
+] %}
+#}
+
+<article {{ attributes.addClass(classes) }}>
+  <div{{ content_attributes.addClass('grid_content') }}>
+    <a href="{{ url }}" rel="bookmark">
+      <div class = "storygrid_article">
+        {{ content|without('links') }}
+        <p class="story_title"{{ title_attributes.addClass(title_classes) }}>
+          {{ label }}
+        </p>
+      </div>
+    </a>
+  </div><!-- /.content -->
+</article><!-- /.node -->

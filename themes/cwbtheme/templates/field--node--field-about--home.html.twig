@@ -1,4 +1,8 @@
-{% extends "@stable/field/field.html.twig" %}
+  <div class="about" {{ attributes }}>
+      {% for item in items %}
+        {{ item.content }}
+      {% endfor %}
+    </div>
 
 {# Create classes array #}
 {% set classes = [] %}

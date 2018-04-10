@@ -53,3 +53,10 @@ function basic_preprocess_field(&$variables, $hook) {
   // Make additional variables available to the template.
   $variables['bundle'] = $variables['element']['#bundle'];
 }
+
+function cwbtheme_preprocess_menu(&$variables) {
+    $user = \Drupal\User\Entity\User::load(\Drupal::currentUser()->id());
+    $variables['customusername'] = $user->get('field_firstname')->value;
+    $variables['profilepicture'] = $user->get('user_picture')->value;
+}
+

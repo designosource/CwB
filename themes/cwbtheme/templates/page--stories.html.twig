@@ -1,0 +1,9 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+  {{page.content.cwbtheme_page_title}}
+  <div id="content-area" class="story-grid-page">
+    {{ page.content.cwbtheme_content }}
+  </div>
+  {{kint(page.content)}}
+{% endblock %}

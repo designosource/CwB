@@ -4,7 +4,6 @@
 {% set prev_site_url = app.request.headers.get('referer') %}
 {% set members = 'members' in site_url|render|render %}
 <div{{ attributes.addClass(
-  'layout-container',
   main_menu or secondary_menu ? 'with-navigation',
   secondary_menu ? 'with-subnav', members ? 'members'
 ) }}>

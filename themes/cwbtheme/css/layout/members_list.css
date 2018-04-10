@@ -1,3 +1,25 @@
+/*main styling*/
+
+h1{
+    display: inline;
+    font-size: 26px;
+    color: #3EACD5;
+    border-bottom: 2px solid #35B996;
+    text-transform: uppercase;
+}
+
+/* Toevoeging na PJ's fuckup <3 */
+.members-view div, .public-view div {
+  color: #FFFFFF!important;
+}
+
+.__social-media ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*Member view*/
+
 .members-view{
     color: #FFFFFF;
     margin-top: 40px;
@@ -5,8 +27,10 @@
 }
 
 .members-view article{
-    background-color: #35B996;
-    padding-bottom: 40px;
+    background-color: #43AED6;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 .members-view .__user-picture{
@@ -18,10 +42,16 @@
     height: 300px;
 }
 
+.members-view .__location a{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
 .members-view .__firstname{
     display: inline;
     font-weight: bold;
     font-size: 20px;
+    margin: 0;
 }
 
 .members-view .__name{
@@ -46,23 +76,176 @@
     background-color: transparent !important;
     padding: 0 !important;
     box-shadow: none !important;
+    color: #FFFFFF;
 }
 
 .members-view .__firstname a{
     background-color: transparent !important;
     padding: 0 !important;
     box-shadow: none !important;
+    color: #FFFFFF;
 }
 
 .members-view .__name a{
     background-color: transparent !important;
     padding: 0 !important;
     box-shadow: none !important;
+    color: #FFFFFF;
 }
 
 .members-view .__social-media a{
     background-color: transparent !important;
     padding: 0 !important;
     box-shadow: none !important;
+    color: #FFFFFF;
 }
 
+.members-view .item-list--linkicon{
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.members-view .linkicon a{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+/*public member view*/
+
+.public-view{
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.public-view article{
+    background-color: #35B996;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.public-view .__user-picture{
+    margin-bottom: 15px;
+}
+
+.public-view .__user-picture img{
+    width: 100%;
+    height: 300px;
+}
+
+.public-view .__location{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.public-view .__firstname{
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.public-view .__name{
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.public-view .__firstname{
+    padding-left: 20px;
+}
+
+.public-view .__location{
+    padding-left: 20px;
+}
+
+.public-view .__social-media{
+    padding-left: 20px;
+}
+
+.public-view .__user-picture a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    color: #FFFFFF;
+}
+
+.public-view .__firstname a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    color: #FFFFFF;
+}
+
+.public-view .__name a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    color: #FFFFFF;
+}
+
+.public-view .__social-media a{
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    color: #FFFFFF;
+}
+
+.public-view .item-list--linkicon{
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.public-view .linkicon a{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+/*user page*/
+
+.__user-picture img{
+    width: 80%;
+}
+
+.__firstname{
+    display: inline;
+    color: #3EACD5;
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.__name{
+    display: inline;
+    color: #3EACD5;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.__biography div{
+    font-size: 22px;
+    color: #3EACD5;
+}
+
+.__biography p{
+    font-size: 16px;
+    color: #333;
+}
+
+.__location{
+    font-size: 22px;
+    color: #35B996;
+}
+
+.linkicon a{
+    color: #43AED6;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.layout--twocol{
+    margin: 110px 0;
+}

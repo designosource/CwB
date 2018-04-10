@@ -9,8 +9,11 @@ global:
       css/layout/members_list.css: {}
     component:
       css/components/components.css: {}
+    fontawesome:
+      css/fontawesome/font-awesome.css: {}
     theme:
       css/theme/theme.css: {}
+      css/theme/professional.css: {}
       css/theme/print.css: { media: print }
   js:
     js/modernizr.js: {}

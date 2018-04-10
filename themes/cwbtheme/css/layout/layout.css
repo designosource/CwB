@@ -16,6 +16,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: auto;
+  padding: 0;
 }
 
 .container::after {
@@ -174,13 +175,13 @@ body {
 /* - - - CWB theming - - - */
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-/* LICHTBLAUW : #3eacd5 */
+/* LICHTBLAUW : #43AED6 */
 
-/* LICHTGROEN : #35b996 */
+/* LICHTGROEN : #35B996 */
 
-/* APPELBLAUWZEEGROEN GROEN #33bcb3 */
+/* APPELBLAUWZEEGROEN GROEN #33BCB3 */
 
-/* APPELBLAUWZEEGROEN BLAUW #3ac2d7 */
+/* APPELBLAUWZEEGROEN BLAUW #3AC2D7 */
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -195,21 +196,34 @@ body {
   text-transform: uppercase;
 }
 
-.__about {
-  display: block;
-  width: 80%;
-  margin: 5em auto;
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-h2 {
+.about {
+  display: block;
+  width: 100%;
+  margin: 5em auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.about_text{
+  width: 70%;
+  align-self: center;
+}
+
+div h2 {
   text-transform: uppercase;
   font-size: 1.2em;
-  color: #3eacd5;
+  color: #43AED6;
   border-bottom: 2px solid #35b996;
+  display: inline-flex;
 }
 
-#block-cwbtheme-content a {
-  background-color: #3eacd5;
+.btn-blue {
+  background-color: #43AED6;
   text-decoration: none;
   color: white;
   padding: 10px 25px;
@@ -258,7 +272,7 @@ footer h2 {
   border-bottom: 0px solid white;
 }
 
-footer #block-footerwebsiteby, footer #block-mainnavigation {
+footer #block-footerwebsiteby, footer #block-mainnavigation, footer .contextual-region {
   padding: 15px;
 }
 
@@ -280,6 +294,17 @@ footer #block-mainnavigation>ul li {
 footer #block-mainnavigation>ul li a {
   text-transform: uppercase;
   font-size: 0.8em;
+}
+
+footer#footer-bottom {
+  padding: 5px 25px;
+}
+
+#block-footerlogo > div.__body.quickedit-field > p:nth-child(1) > img {
+  display: block;
+  width: 150px;
+  float: left;
+  margin: 25px;
 }
 
 /* Responsive Menu */
@@ -321,3 +346,55 @@ footer #block-mainnavigation>ul li a {
   border-bottom: 0px solid white;
   text-align: center;
 }
+
+/* Donate Page */
+#block-cwbtheme-content > article > div.content img.align-center {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+
+#block-cwbtheme-content > article > div.content img.align-right {
+  display: block;
+  width: 40%;
+  margin: 20px 0px 20px 20px;
+}
+
+#block-cwbtheme-content > article > div.content img.align-left {
+  display: block;
+  width: 40%;
+  margin: 20px 20px 20px 0px;
+}
+
+#block-cwbtheme-content > article > div.content h3 {
+  color: #3AC2D7;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+#block-cwbtheme-content > article > div.content a {
+  background-color: #43AED6;
+  text-decoration: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 0.8em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Basic Page Layout */
+#block-cwbtheme-page-title {
+  margin-top: 3em;
+}
+
+#block-cwbtheme-content div.content {
+  padding-bottom: 4em;
+}
+
+
+
+
+
+
+
+
+
