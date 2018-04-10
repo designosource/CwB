@@ -390,11 +390,20 @@ footer#footer-bottom {
   padding-bottom: 4em;
 }
 
+/* more questions */
 
+#block-cwbtheme-content .__questions summary{
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
 
+#block-cwbtheme-content .__questions a, #block-cwbtheme-content  .__contact > div:first-child {
+  font-size: 22px;
+  color: #3EACD5;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
-
-
-
-
-
+#block-cwbtheme-content  .__contact label {
+  display: none;
+}
