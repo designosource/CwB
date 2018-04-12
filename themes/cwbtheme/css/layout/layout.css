@@ -385,13 +385,18 @@ footer#footer-bottom {
   font-size: 1.1em;
 }
 
-#block-cwbtheme-content > article > div.content a {
+/*#block-cwbtheme-content > article > div.content a {
   background-color: #43AED6;
   text-decoration: none;
   color: white;
   padding: 10px 25px;
   font-size: 0.8em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}*/
+
+#block-cwbtheme-content > article > div.content a:hover, #block-cwbtheme-content > article > div.content a:active {
+  background-color: #5EBADC;
+  color: white;
 }
 
 /* Basic Page Layout */
