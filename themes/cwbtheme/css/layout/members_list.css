@@ -8,6 +8,14 @@ h1{
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 1024px) {
+  h1 {
+    border-bottom: none;
+    text-align: center;
+    display: block;
+  }
+}
+
 /* Toevoeging na PJ's fuckup <3 */
 .members-view div, .public-view div {
   color: #FFFFFF!important;

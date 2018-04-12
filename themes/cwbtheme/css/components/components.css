@@ -33,6 +33,12 @@ input[type=submit], .btn-blue {
   padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  input[type=submit], .btn-blue {
+    margin: 0 auto 25px;
+  }
+}
+
 input[type=submit]:hover, .btn-blue:hover, input[type=submit]:active, .btn-blue:active {
   background-color: #5EBADC;
   color: white;
