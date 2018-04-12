@@ -17,6 +17,17 @@
   .pager__item a {
     display: inline-block; }
 
+input[type=submit].btn-blue, .btn-blue {
+  background-color: #43AED6;
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  font-size: 1.2em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin-bottom: 25px;
+}
+
 /*# sourceMappingURL=components.css.map */
 /* story_grid*/
 #block-story-grid-block{

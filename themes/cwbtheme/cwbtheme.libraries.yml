@@ -9,6 +9,7 @@ global:
       css/layout/members_list.css: {}
     component:
       css/components/components.css: {}
+      css/components/filters.css: {}
     fontawesome:
       css/fontawesome/font-awesome.css: {}
     theme:
@@ -17,6 +18,9 @@ global:
       css/theme/print.css: { media: print }
   js:
     js/modernizr.js: {}
+    js/stories.js: {}
+  dependencies:
+    - core/jquery
   #   js/build/scripts.js: {}
   # dependencies:
   #   - core/drupal
