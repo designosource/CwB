@@ -424,6 +424,10 @@ footer#footer-bottom {
   margin: 0;
 }
 
+#sidebar-second .views-row .views-col img {
+    margin: 0;
+}
+
 /* Basic Page Layout */
 #block-cwbtheme-page-title {
   margin-top: 3em;
