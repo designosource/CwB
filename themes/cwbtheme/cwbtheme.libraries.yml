@@ -11,6 +11,7 @@ global:
     component:
       css/components/components.css: {}
       css/components/filters.css: {}
+      css/components/footer.css: {}
       css/components/partners.css: {}
     fontawesome:
       css/fontawesome/font-awesome.css: {}

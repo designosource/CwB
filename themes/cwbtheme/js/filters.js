@@ -40,8 +40,6 @@ for (i = 0; i < x.length; i++) {
           }
         }
         s.click();
-        var f = document.getElementById("edit-submit-story-grid")
-        f.click();
     });
     b.appendChild(c);
   }

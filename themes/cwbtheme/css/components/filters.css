@@ -9,7 +9,7 @@
 }
 
 #views-exposed-form-story-grid-stories-grid-page .js-webform-type-radios, #views-exposed-form-weather-presenters-public-member-grid .js-webform-type-radios{
-    display: none;
+    /*display: none;*/
 }
 
 #edit-name{
@@ -50,7 +50,6 @@
 
 #views-exposed-form-story-grid-stories-grid-page .js-form-type-select label,
 #views-exposed-form-weather-presenters-public-member-grid .js-form-type-select label{
-  display: none;
 }
 
 .select-selected {

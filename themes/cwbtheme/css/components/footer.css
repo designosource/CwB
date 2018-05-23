@@ -45,10 +45,11 @@ footer a:hover {
 }
 
 #block-footerlogo img {
-  max-width: 70%;
+  width: 70%;
+  max-width: 150px;
   display: block;
   position: absolute;
-  right: 0;
+  right: 10%;
 }
 
 
@@ -59,17 +60,18 @@ footer a:hover {
 #block-publicfooterabout a {
     display: block;
     width: 50%;
+    max-width: 200px;
     background: white;
     padding: 10px;
     font-weight: bold;
     text-align: center;
     font-size: 16px;
     color: #35b996;
+    transition: background 150ms ease;
 }
 
-#block-publicfooterabout a:hover {
-  background: none;
-  color: white;
+#block-publicfooterabout a:hover, #block-publicfooterabout a:active {
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: none;
 }
 
@@ -82,13 +84,16 @@ footer a:hover {
 #block-footersocialmedia p {
     display: flex;
     justify-content: space-around;
+    max-width: 150px;
 }
 
 #block-footersocialmedia a {
     font-size: 24px;
+    transition: color 150ms ease;
 }
 
-#block-footersocialmedia a:hover {
+#block-footersocialmedia a:hover, #block-footersocialmedia a:active {
+    color: rgba(255, 255, 255, 0.9);
     border-bottom: none;
 }
 
@@ -113,7 +118,6 @@ footer #block-mainnavigation>ul, footer #block-membersfooter>ul {
 
 footer #block-mainnavigation>ul li, footer #block-membersfooter>ul li {
   display: block;
-  width: 175px;
   margin: 2px 10px;
   padding-bottom: 5px;
 }
@@ -132,4 +136,18 @@ footer#footer-bottom {
   width: 150px;
   float: left;
   margin: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+  footer .flex-row {
+    flex-flow: column wrap;
+  }
+
+  .footer-first, .footer-second, #block-mainnavigation h2, #block-footersocialmedia h2 {
+    display: none;
+  }
+
+  footer #block-mainnavigation>ul, footer #block-membersfooter>ul, #block-footersocialmedia p {
+    margin: auto;
+  }
 }
