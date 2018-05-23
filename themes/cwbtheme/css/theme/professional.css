@@ -105,22 +105,6 @@ body {
     padding-left: 20px;
 }
 
-.block-cwbtheme-content > .views-element-container > div > .view-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.prof-grid:nth-child(4n+1), .prof-grid:nth-child(4n) {
-    grid-column: span 2;
-}
-
-@screen (max-width: 950px) {
-    .prof-grid {
-        background-color: #FFF;
-        grid-column: span 3 !important;
-    }
-}
-
 .full-story .story_author {
     padding: 20px 0;
     color: rgb(67, 174, 214);
@@ -251,13 +235,4 @@ body {
 
 .container #content {
     padding: 0 20px;
-}
-
-#block-story-grid-block .view-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#block-story-grid-block > div > div {
-    display: block;
 }

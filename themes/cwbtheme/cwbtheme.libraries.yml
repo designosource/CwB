@@ -7,6 +7,7 @@ global:
     layout:
       css/layout/layout.css: {}
       css/layout/members_list.css: {}
+      css/layout/404.css: {}
     component:
       css/components/components.css: {}
       css/components/filters.css: {}
@@ -19,9 +20,13 @@ global:
       css/theme/print.css: { media: print }
   js:
     js/modernizr.js: {}
+    js/partners.js: {}
+    js/filters.js: {}
   #  js/stories.js: {}
   dependencies:
-    - core/jquery
+  #  - core/drupal
+  #  - core/jquery
+  #  - core/jquery.once
   #   js/build/scripts.js: {}
   # dependencies:
   #   - core/drupal

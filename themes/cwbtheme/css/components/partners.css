@@ -1,3 +1,27 @@
+
+
+.slick-arrow::before{
+    color: #43AED6;
+}
+
+.slick-initialized{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.slide__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner_slide{
+    display: flex;
+}
+
 .slick img{
-    background-color: #0c97ed;
+
+
 }

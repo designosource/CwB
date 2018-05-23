@@ -1,0 +1,12 @@
+
+@media(max-width:991px) {
+  #block-story-grid-block .view-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .story-grid-row:nth-child(4n+1), .story-grid-row:nth-child(4n){
+    grid-column: span 1;
+    padding-bottom: 0!important;
+  }
+}

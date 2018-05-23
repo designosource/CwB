@@ -17,8 +17,10 @@
 
 <article{{ attributes.addClass(classes) }}>
   <div class="action-box">
-  <a href="/professional/stories" class="back-to-articles">&lt; Return to articles</a>
-  <a class="btn pull-right" href="#">Publish to public</a>
+  <a href="/professional/stories" class="back-to-articles"><i class="fas fa-chevron-left"></i> Return to articles</a>
+  {% if user.hasPermission('clone nodes') %}
+    <a class="btn pull-right" href="/clone/{{node.id}}/quick_clone">Publish to public</a>
+  {% endif %}
   </div>
   {% if title_prefix or title_suffix or display_submitted or unpublished or page is empty and label %}
     <header>

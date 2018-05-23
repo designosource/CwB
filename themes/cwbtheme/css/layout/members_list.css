@@ -39,15 +39,20 @@ h1{
     padding-bottom: 20px;
     margin: 0;
     margin-bottom: 25px;
+    width: 300px;
+    height: 450px;
+
 }
 
-.members-view .__user-picture{
+.members-view .__user-picture, .public-view .__avatar{
     margin-bottom: 15px;
 }
 
 .members-view .__user-picture img{
     width: 100%;
     height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .members-view .__location a{
@@ -130,8 +135,21 @@ h1{
 .public-view article{
     background-color: #35B996;
     padding-bottom: 20px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 25px;
+    width: 250px;
+    height: 450px;
+}
+
+@media(min-width:992px)
+{
+  .public-view article{
+    width: 280px;
+  }
+}
+
+.public-view header {
+  display: none;
 }
 
 .public-view .__user-picture{
@@ -141,9 +159,11 @@ h1{
 .public-view .__user-picture img{
     width: 100%;
     height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.public-view .__location{
+.public-view .__location a{
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -256,4 +276,13 @@ h1{
 
 .layout--twocol{
     margin: 110px 0;
+}
+
+/*Filters*/
+
+.public-view .views-exposed-form{
+  color:black;
+}
+.public-view .views-exposed-form label{
+  color:black;
 }
