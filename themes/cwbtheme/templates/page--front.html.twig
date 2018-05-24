@@ -114,7 +114,11 @@
     </footer>
   {% endif %}
 
-  <footer id="footer-bottom">
+  {% if 'professional' in site_url|render|render %}
+    <footer id="footer-bottom" class="professional">
+  {% else %}
+    <footer id="footer-bottom">
+  {% endif %}
       <div class="container">
         <a href="https://www.designosource.be" target="_blank">Website by Designosource</a>
       </div>

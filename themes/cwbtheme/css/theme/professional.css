@@ -271,10 +271,35 @@ a.tabledrag-handle .handle{
 
 }
 
+.story-submit-form #edit-field-header-image-0-upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.story-submit-form #edit-field-header-image-0-upload:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: "\f382";
+  color: #35B996;
+  padding: 5px 8px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .story-submit-form #edit-field-header-image-wrapper{
   margin: 15px auto 30px auto;
 }
 
 .story-submit-form .image-widget .form-text{
   margin: 15px auto;
+}
+
+.story-submit-form #edit-field-post-tags-wrapper table {
+  table-layout: unset;
+}
+
+.story-submit-form #edit-field-post-tags-wrapper table .field-multiple-drag {
+  width: 30px;
 }

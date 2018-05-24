@@ -46,6 +46,7 @@ function basic_preprocess_html(&$variables) {
   $variables += $theme_settings->getOriginal();
 }
 
+
 /**
  * Prepares variables for the field.html.twig template.
  */
@@ -59,4 +60,3 @@ function cwbtheme_preprocess_menu(&$variables) {
     $variables['customusername'] = $user->get('field_firstname')->value;
     $variables['profilepicture'] = $user->get('user_picture')->value;
 }
-

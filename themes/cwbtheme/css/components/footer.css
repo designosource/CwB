@@ -114,6 +114,7 @@ footer #block-mainnavigation>ul, footer #block-membersfooter>ul {
   height: 120px;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 footer #block-mainnavigation>ul li, footer #block-membersfooter>ul li {
@@ -143,11 +144,16 @@ footer#footer-bottom {
     flex-flow: column wrap;
   }
 
-  .footer-first, .footer-second, #block-mainnavigation h2, #block-footersocialmedia h2 {
+  .footer-first, .footer-second, #block-mainnavigation h2, #block-footersocialmedia h2, #block-membersfooter h2 {
     display: none;
   }
 
   footer #block-mainnavigation>ul, footer #block-membersfooter>ul, #block-footersocialmedia p {
     margin: auto;
+  }
+
+  #footer-bottom a {
+    display: block;
+    text-align: center;
   }
 }
