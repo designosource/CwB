@@ -236,3 +236,45 @@ body {
 .container #content {
     padding: 0 20px;
 }
+
+
+/****************** STORY FORM *****************************/
+
+.story-submit-form h1{
+  border-bottom:2px solid #3EACD5;
+  color:#35B996;
+  text-align: left;
+  display: inline-block;
+  margin-right: auto;
+}
+
+.story-submit-form .js-form-type-textfield label, .story-submit-form .js-form-type-textarea label,
+.story-submit-form h4 .label, .story-submit-form .tabledrag-toggle-weight,.story-submit-form .js-form-type-vertical-tabs,
+.story-submit-form th, .story-submit-form #edit-body-0-format{
+  display: none;
+}
+
+a.tabledrag-handle .handle{
+  margin: 0;
+  width: 22px;
+  height: auto;
+}
+
+.story-submit-form input, .story-submit-form .js-form-type-textarea{
+  border:none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.story-submit-form #edit-field-header-image-0-upload--description, .story-submit-form .description{
+  font-size:14px;
+  font-style: italic;
+
+}
+
+.story-submit-form #edit-field-header-image-wrapper{
+  margin: 15px auto 30px auto;
+}
+
+.story-submit-form .image-widget .form-text{
+  margin: 15px auto;
+}

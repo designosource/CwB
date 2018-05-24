@@ -9,9 +9,9 @@ global:
       css/layout/members_list.css: {}
       css/layout/404.css: {}
     component:
+      css/components/footer.css: {}
       css/components/components.css: {}
       css/components/filters.css: {}
-      css/components/footer.css: {}
       css/components/partners.css: {}
     fontawesome:
       css/fontawesome/font-awesome.css: {}
@@ -22,7 +22,7 @@ global:
   js:
     js/modernizr.js: {}
     js/partners.js: {}
-    js/filters.js: {}
+  #  js/filters.js: {}
   #  js/stories.js: {}
   dependencies:
   #  - core/drupal
