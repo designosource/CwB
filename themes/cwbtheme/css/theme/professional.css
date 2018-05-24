@@ -263,12 +263,16 @@ a.tabledrag-handle .handle{
 .story-submit-form input, .story-submit-form .js-form-type-textarea{
   border:none;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
 }
 
 .story-submit-form #edit-field-header-image-0-upload--description, .story-submit-form .description{
   font-size:14px;
   font-style: italic;
+}
 
+.story-submit-form #edit-field-header-image-0-upload {
+  box-shadow: none;
 }
 
 .story-submit-form #edit-field-header-image-0-upload::-webkit-file-upload-button {
@@ -277,7 +281,7 @@ a.tabledrag-handle .handle{
 
 .story-submit-form #edit-field-header-image-0-upload:before {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   content: "\f382";
   color: #35B996;
   padding: 5px 8px;

@@ -46,7 +46,6 @@ function basic_preprocess_html(&$variables) {
   $variables += $theme_settings->getOriginal();
 }
 
-
 /**
  * Prepares variables for the field.html.twig template.
  */
