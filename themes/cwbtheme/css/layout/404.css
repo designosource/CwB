@@ -1,0 +1,36 @@
+#error-404, #error-403{
+  margin-top: 15px;
+  background-image: url(/themes/cwbtheme/images/404-bg.png);
+  width: 120%;
+  height: 555px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.error-404_main, .error-403_main{
+  font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 80%;
+    color: #5EBADC;
+    width: 60%;
+}
+
+.error-404_subtext, .error-403_subtext{
+  font-weight: bold;
+  width: 60%;
+}
+
+.error-404_link, .error-403_link{
+  display: block;
+  font-weight: normal;
+  width: 100%;
+}
+
+.error-404_link:hover, .error-403_link:hover{
+  background-color: #FFF!important;
+  text-decoration: underline;
+  color: #5EBADC!important;
+}

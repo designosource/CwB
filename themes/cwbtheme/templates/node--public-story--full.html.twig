@@ -17,6 +17,9 @@
 <div class="action-box">
   <a href="/stories" class="back-to-articles"><i class="fas fa-chevron-left"></i> Return to stories</a>
 </div>
+<div class="article_title">
+  {{ node.label }}
+</div>
 <article{{ attributes.addClass(classes) }}>
   {% if title_prefix or title_suffix or display_submitted or unpublished or page is empty and label %}
     <header>

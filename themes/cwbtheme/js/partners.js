@@ -1,10 +1,10 @@
 (function ($, Drupal) {
   Drupal.behaviors.cwbtheme = {
     attach: function(context, settings) {
-      // $('.center').slick({
+      //  $('').slick({
       //     centerMode: true,
       //     centerPadding: '60px',
-      //     dots: false,
+      //     dots: true,
       //     infinite: false,
       //     speed: 300,
       //     slidesToShow: 3,
@@ -37,13 +37,13 @@
       //         // settings: "unslick"
       //         // instead of a settings object
       //     ]
-      // })
+      // });
       // $('.slider-nav').on('mouseenter', '.slick-slide', function (e) {
       //     var $currTarget = $(e.currentTarget),
       //     index = $currTarget.data('slick-index'),
-      //     slickObj = $('.slider-for').slick('getSlick');
-      //     slickObj.slickGoTo(index);
-      // });
+      //      slickObj = $('.slider-for').slick('getSlick');
+      //      slickObj.slickGoTo(index);
+      //  });
     }
   }
 }(jQuery, Drupal));

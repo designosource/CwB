@@ -1,0 +1,13 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+<div id="content-area">
+  <div class="login-intro">
+    <img src="/themes/cwbtheme/images/logo.png" alt="logo.png" width="150px;">
+    <h3>Welcome Back,
+    let's save the future!</h3>
+  </div>
+{{ prev_site_url }}
+  {{ page.content }}
+</div>
+{% endblock %}

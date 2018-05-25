@@ -104,8 +104,16 @@ footer a:hover {
   padding: 10px;
 }
 
+.footer-third{
+  padding-left: 0;
+}
+
 footer #block-footerwebsiteby, footer #block-mainnavigation, footer .contextual-region {
-  padding: 15px;
+  padding: 15px 0;
+}
+
+.footer-bottom-wrapper a {
+  display: inline-block;
 }
 
 footer #block-mainnavigation>ul, footer #block-membersfooter>ul {
@@ -114,7 +122,6 @@ footer #block-mainnavigation>ul, footer #block-membersfooter>ul {
   height: 120px;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 footer #block-mainnavigation>ul li, footer #block-membersfooter>ul li {

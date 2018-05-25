@@ -18,6 +18,21 @@
 .pager__item a {
     display: inline-block; }
 
+.js-pager__items{
+    margin-left: 15px;
+  }
+
+.action-box .back-to-articles {
+    font-weight:bold;
+  }
+
+.article_title{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "ubuntu", sans-serif;
+  color: #5DB9DC;
+}
+
 input[type=submit], .btn-blue, #block-cwbtheme-content .js-pager__items a {
   display: inline-block;
   font-size: 1em;
@@ -57,23 +72,30 @@ input[type=submit]:hover, .btn-blue:hover, input[type=submit]:active, .btn-blue:
     display: grid;
 }
 
+.views-infinite-scroll-content-wrapper{
+  margin-bottom: 30px;
+}
+
 .views-infinite-scroll-content-wrapper > .view-wrapper {
     display: grid;
 }
 
-.block-views-block-related-content-block-1 .storygrid_article{
-  margin: 0;
+#block-story-grid-block .btn-blue{
+  margin-left: 15px;
 }
 
 .storygrid_article {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-  margin: 0 0 15px 0;
   overflow: hidden;
   position: relative;
   height: 300px;
 }
 
-@media (min-width: 768px) {
+.story-grid-row, .prof-grid {
+  margin: 15px;
+}
+
+@media (min-width: 992px) {
   #block-story-grid-block .view-wrapper {
       grid-template-columns: repeat(2, 1fr);
   }
@@ -84,7 +106,6 @@ input[type=submit]:hover, .btn-blue:hover, input[type=submit]:active, .btn-blue:
 
   .prof-grid {
       background-color: #FFF;
-      grid-column: span 3 !important;
   }
 
   .story-grid-row:nth-child(4n+1) , .story-grid-row:nth-child(4n), .prof-grid:nth-child(4n+1), .prof-grid:nth-child(4n) {
@@ -92,15 +113,18 @@ input[type=submit]:hover, .btn-blue:hover, input[type=submit]:active, .btn-blue:
     padding-bottom: 0!important;
   }
 
-  .storygrid_article {
-    margin: 15px 15px 15px 0;
-  }
 }
 
 .block-views-block-related-content-block-1{
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.block-views-block-related-content-block-1 h2{
+  border: none;
+  font-family: "ubuntu", sans-serif;
+
 }
 
 .story_title{
@@ -114,15 +138,25 @@ input[type=submit]:hover, .btn-blue:hover, input[type=submit]:active, .btn-blue:
   padding: 25px;
 }
 
-.__grid-image img {
+.storygrid_article img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: top;
 }
 
+#block-story-grid-block h2{
+  margin-left: 15px;
+}
+
 .block-twitterblock{
   padding-bottom: 30px;
+  width: 90%;
+  margin-left: 15px;
+}
+
+.block-twitterblock h2{
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -131,7 +165,7 @@ input[type=submit]:hover, .btn-blue:hover, input[type=submit]:active, .btn-blue:
     float: right;
     display: inline-flex;
     flex-flow: column nowrap;
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   #block-story-grid-block{
@@ -147,4 +181,8 @@ article[role=article] h2 {
   margin-top: 1em;
   text-transform: initial;
   border-bottom: none;
+}
+
+.timeline-Tweet{
+  padding-left: 0;
 }

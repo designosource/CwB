@@ -8,7 +8,7 @@ h1{
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   h1 {
     border-bottom: none;
     text-align: center;
@@ -16,7 +16,6 @@ h1{
   }
 }
 
-/* Toevoeging na PJ's fuckup <3 */
 .members-view div, .public-view div {
   color: #FFFFFF!important;
 }
@@ -40,7 +39,7 @@ h1{
     margin: 0;
     margin-bottom: 25px;
     width: 300px;
-    height: 450px;
+    height: 395px;
 
 }
 
@@ -138,13 +137,15 @@ h1{
     margin: 0 auto;
     margin-bottom: 25px;
     width: 250px;
-    height: 450px;
+    height: 395px;
 }
 
 @media(min-width:992px)
 {
   .public-view article{
     width: 280px;
+    height: 425px;
+
   }
 }
 
@@ -234,8 +235,8 @@ h1{
 
 /*user page*/
 
-.__user-picture img{
-    width: 80%;
+.__user-picture img, .__avater img{
+    margin: 0 auto;
 }
 
 .__firstname{
@@ -253,19 +254,16 @@ h1{
     font-weight: bold;
 }
 
-.__biography div{
+.__biography div, .layout--twocol .__body div{
+    font-weight: bold;
     font-size: 22px;
     color: #3EACD5;
 }
 
-.__biography p{
+.__biography p, .layout--twocol .__body p{
+  font-weight: normal;
     font-size: 16px;
     color: #333;
-}
-
-.__location{
-    font-size: 22px;
-    color: #35B996;
 }
 
 .linkicon a{
@@ -275,14 +273,115 @@ h1{
 }
 
 .layout--twocol{
-    margin: 110px 0;
+    margin: 30px 0;
 }
 
-/*Filters*/
-
-.public-view .views-exposed-form{
-  color:black;
+.layout__region--second{
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row wrap;
 }
-.public-view .views-exposed-form label{
-  color:black;
+
+.layout__region--second .item-list--linkicon{
+  width: 100%;
+  order: 3;
+}
+
+.layout__region--second .item-list--linkicon::after{
+  width: 100%;
+  order: 3;
+}
+
+.layout__region--second .__firstname, .layout__region--second .__name{
+  order: -1;
+}
+
+.layout__region--second ul{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.layout__region--second .item-list--linkicon::before{
+  content: "Socials";
+  font-weight: bold;
+  color: #3EACD5;
+}
+
+.layout__region--second .__location, .layout__region--second  .__founding-member{
+  order: 2;
+  width: 100%;
+  color:#33BCB3;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40em){
+
+  .layout--twocol{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .layout__region--first{
+    padding: 0 30px 30px 0;
+  }
+
+  .layout__region--second{
+    display: grid;
+    grid-template: auto  auto 1fr auto/auto 1fr auto;
+    padding-bottom: 30px;
+  }
+
+  .layout__region--second .__firstname{
+    grid-row: 1;
+    grid-column: 1;
+    }
+  .layout__region--second .__name{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .layout__region--second .item-list--linkicon{
+    grid-row: 1;
+    grid-column: 2/3;
+    width: 100%;
+    text-align: right;
+    margin:0;
+  }
+
+  .layout__region--second ul{
+    justify-content: flex-end;
+  }
+
+  .layout__region--second .__location{
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .layout__region--second .__founding-member{
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+
+  .layout__region--bottom{
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .layout__region--second .item-list--linkicon a{
+    margin-right: 0;
+    margin-left: 14px;
+  }
+
+}
+
+
+@media(min-width:1200px) and (max-width:1280px){
+  .weatherpresenter-grid .views-view-grid .col-lg-4:nth-child(n+3) article{
+    margin-right: 0;
+  }
+
+  .weatherpresenter-grid .views-view-grid .col-lg-4:nth-child(3n+1) article{
+    margin-left: 0;
+  }
+
 }

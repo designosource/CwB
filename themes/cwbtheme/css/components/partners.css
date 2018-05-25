@@ -1,4 +1,6 @@
-
+#block-views-block-partners-block-1{
+  margin-bottom: 30px;
+}
 
 .slick-arrow::before{
     color: #43AED6;
@@ -10,11 +12,17 @@
     margin-right: auto;
 
 }
+.slick__slide, .slick__slide img{
+  max-height: 175px;
+  margin-top: 5px;
+  width: auto;
+}
 
 .slide__content {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 180px;
 }
 
 .partner_slide{

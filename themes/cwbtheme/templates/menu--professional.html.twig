@@ -29,10 +29,12 @@
 {% macro menu_links(items, attributes, menu_level) %}
 
     <ul class="top-menu">
+      {% if logged_in %}
         <li>
             <img src="{{ drupal_token('current-user:user_picture:medium:url') }}" alt="">
             <p>{{ drupal_token('current-user:field_firstname:value') }}</p>
         </li>
+      {% endif %}
     </ul>
   {% import _self as menus %}
   {% if items %}

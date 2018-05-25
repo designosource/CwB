@@ -4,6 +4,47 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.user-login-form, .login-intro {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 576px;
+}
+
+.user-login-form .description{
+  display: none;
+}
+
+.user-login-form input {
+  border:none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-bottom: 2em;
+  max-width: 100%!important;
+}
+
+.user-login-form input::placeholder {
+  color: #B7B7B7;
+  opacity: 1;
+}
+
+.user-login-form #edit-submit{
+    display: block;
+    margin: 0 auto;
+}
+
+.login-intro img{
+  display: block;
+  width: 150px;
+  margin: 45px auto;
+}
+
+.login-intro h3{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  color: #5EBADC;
+  text-align: center;
+}
+
 .menu--professional {
     background-color: rgb(94, 186, 220);
 }
@@ -27,7 +68,6 @@ body {
 }
 
 .menu--professional .menu-item--active-trail {
-
 }
 
 .menu--professional .menu-item--active-trail::after {
@@ -72,6 +112,7 @@ body {
     background-color: rgba(51, 188, 179, 1);
     color: #FFF;
     position: relative;
+    min-height: 90px;
 }
 
 .prof-grid .story_author img {
@@ -79,6 +120,7 @@ body {
     width: 50px;
     border-radius: 50%;
     float: left;
+    margin-right: 15px;
 }
 
 .prof-grid .__location, .prof-grid .__social-media {
@@ -93,16 +135,26 @@ body {
     position: absolute;
     left: 90px;
     top: 50px;
-    font-size: .9em;
+    font-size: .6em;
 }
 
 .prof-grid .story_author a, .prof-grid .__firstname, .prof-grid .__name {
     color: #FFF;
-    font-size: 1.3em;
+    font-size: .8em;
 }
 
-.prof-grid .__firstname {
-    padding-left: 20px;
+@media (min-width:992px) {
+
+  .prof-grid .story_author span:last-of-type {
+      position: absolute;
+      left: 90px;
+      top: 50px;
+      font-size: 0.8em;
+    }
+
+  .prof-grid .story_author a, .prof-grid .__firstname, .prof-grid .__name {
+      font-size: 1em;
+  }
 }
 
 .full-story .story_author {

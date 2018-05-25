@@ -1,25 +1,37 @@
-#views-exposed-form-weather-presenters-public-member-grid label input{
+#views-exposed-form-public-weather-presenters-page-1 label input,
+{
   color: black!important;
 }
 
-#views-exposed-form-story-grid-stories-grid-page, #views-exposed-form-weather-presenters-public-member-grid{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap	;
+.public-view .views-exposed-form{
+  color:black;
+}
+.public-view .views-exposed-form label{
+  color:black;
 }
 
-#views-exposed-form-story-grid-stories-grid-page .js-webform-type-radios, #views-exposed-form-weather-presenters-public-member-grid .js-webform-type-radios{
-    /*display: none;*/
+#views-exposed-form-story-grid-stories-grid-page, #views-exposed-form-public-weather-presenters-page-1{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 20px;
+  margin-left: 15px
+}
+
+#views-exposed-form-story-grid-stories-grid-page .js-webform-radios .form-radios,
+#views-exposed-form-public-weather-presenters-page-1 .js-webform-type-radios{
+    display: none;
 }
 
 #edit-name{
     margin-top: 10px;
 }
 
-#views-exposed-form-story-grid-stories-grid-page .js-form-type-textfield input, #views-exposed-form-weather-presenters-public-member-grid .js-form-type-textfield input{
+#views-exposed-form-story-grid-stories-grid-page .js-form-type-textfield input, #views-exposed-form-public-weather-presenters-page-1 .js-form-type-textfield input{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   border:none;
   padding: 12px;
+  color: #000000;
 }
 
 .js-form-type-textfield input::placeholder {
@@ -42,66 +54,111 @@
   font-weight: bold;
 }
 
-/************* CUSTOM SELECTS ***************************/
-#views-exposed-form-story-grid-stories-grid-page select,
-#views-exposed-form-weather-presenters-public-member-grid select{
-  /*display: none; /*hide original SELECT element:*/
+.js-form-type-select, .js-form-type-select select,
+.js-form-type-textfield, .js-form-type-textfield input{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-#views-exposed-form-story-grid-stories-grid-page .js-form-type-select label,
-#views-exposed-form-weather-presenters-public-member-grid .js-form-type-select label{
+.js-form-type-select select{
+  background-color: #33BCB3;
+  color:#FFFFFF;
+  border:none;
+  padding: 15px;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-.select-selected {
-  background-color: #35B996;
+#edit-field-founding-member-value-1--2{
+  background-color: #FFFFFF;
+  color:#3EACD5;
+  font-size: 18px;
+  font-weight: bold;
+  width: 250px;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
-.select-selected:after {
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+#edit-field-founding-member-value-1--2 option, #edit-field-founding-member-value--wrapper label{
+  color:#35B996;
 }
 
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
+#edit-field-founding-member-value--wrapper label{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
+#edit-field-founding-member-value-1--2 option:checked, #edit-field-founding-member-value--wrapper input:checked + label{
+  color:#3EACD5;
+  text-decoration:none;
 }
 
-.select-items {
-  background-color: #35B996;
-  z-index: 99;
+
+.form-item-location-dropdown select{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.select-hide {
+.weatherpresenter-grid{
+  margin-top: 0px;
+}
+
+#edit-submit-public-weather-presenters{
   display: none;
 }
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+
+/****************** MEDIA QUERIES *******************************/
+@media (min-width:576px) {
+
+  .js-form-type-select, .js-form-type-select select,
+  .js-form-type-textfield, .js-form-type-textfield input{
+    max-width: none;
+  }
+
 }
 
 
-/****************** MEDIA QUERIES *******************************/
 
-@media(min-width:768px) {
-  #views-exposed-form-story-grid-stories-grid-page .js-webform-type-radios, #views-exposed-form-weather-presenters-public-member-grid .js-webform-type-radios{
+@media(min-width:992px) {
+  #views-exposed-form-story-grid-stories-grid-page .js-webform-radios .form-radios, #views-exposed-form-public-weather-presenters-page-1 .js-webform-type-radios{
       order: -1;
       display: flex;
       flex-flow: row nowrap;
+      font-size: 14px;
   }
 
-  #views-exposed-form-story-grid-stories-grid-page .js-form-type-select, #views-exposed-form-weather-presenters-public-member-grid .js-form-type-select{
+  #views-exposed-form-story-grid-stories-grid-page .js-webform-radios label, #views-exposed-form-public-weather-presenters-page-1 .js-webform-type-radios label{
+      padding-left: 0;
+  }
+
+  #views-exposed-form-story-grid-stories-grid-page .js-form-type-select, #views-exposed-form-public-weather-presenters-page-1 .js-form-type-select{
       display: none;
   }
+
+  #views-exposed-form-story-grid-stories-grid-page .form-item-title{
+    order: 2;
+  }
+
+  #edit-field-founding-member-value--wrapper{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #edit-field-founding-member-value--wrapper .js-webform-radios, #edit-parent--wrapper .js-webform-radios{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  #edit-parent--wrapper{
+    width: 60%;
+    font-size:14px;
+    margin-bottom: 30px;
+  }
+
+  .form-item-title{
+    width: 40%;
+    margin: 0 0 15px auto;
+  }
+
 }

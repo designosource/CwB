@@ -260,6 +260,7 @@ body {
     width: auto;
     display: inline-flex;
     margin-right: auto;
+    margin-bottom: 20px;
   }
 
   .about_text{
@@ -344,13 +345,13 @@ div h2 {
 #block-cwbtheme-content > article > div.content img.align-right {
   display: block;
   width: 40%;
-  margin: 20px 0px 20px 20px;
+  margin: 0px 0px 20px 20px;
 }
 
 #block-cwbtheme-content > article > div.content img.align-left {
   display: block;
   width: 40%;
-  margin: 20px 20px 20px 0px;
+  margin: 0px 20px 20px 0px;
 }
 
 #block-cwbtheme-content > article > div.content h3 {
@@ -359,14 +360,6 @@ div h2 {
   font-size: 1.1em;
 }
 
-/*#block-cwbtheme-content > article > div.content a {
-  background-color: #43AED6;
-  text-decoration: none;
-  color: white;
-  padding: 10px 25px;
-  font-size: 0.8em;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-}*/
 
 #block-cwbtheme-content > article > div.content a:hover, #block-cwbtheme-content > article > div.content a:active {
   background-color: #35B996;
@@ -388,7 +381,7 @@ div h2 {
   width: 100% !important;
   max-width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 #sidebar-second .views-row .views-col img {
@@ -414,6 +407,16 @@ div h2 {
   margin-bottom: 2em;
 }
 
+#block-cwbtheme-content  .__contact input, #block-cwbtheme-content  .__contact textarea {
+  border:none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+}
+
+#block-cwbtheme-content  .__contact input::placeholder, #block-cwbtheme-content  .__contact textarea::placeholder {
+  color: #B7B7B7;
+}
+
 @media screen and (max-width: 1024px) {
   #block-cwbtheme-content .__questions, #block-cwbtheme-content  .__contact {
     text-align: center;
@@ -423,4 +426,17 @@ div h2 {
 
 #block-cwbtheme-content  .__contact label {
   display: none;
+}
+
+/*******************STICKY FOOTER****************/
+/*Met vh want flexbox op drupal structuur is een merde*/
+
+#content {
+  min-height: calc(100vh - 210px);
+}
+#footer {
+  min-height: 80px;
+}
+#footer-bottom{
+  min-height: 60px;
 }

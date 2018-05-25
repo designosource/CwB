@@ -59,3 +59,4 @@ function cwbtheme_preprocess_menu(&$variables) {
     $variables['customusername'] = $user->get('field_firstname')->value;
     $variables['profilepicture'] = $user->get('user_picture')->value;
 }
+
